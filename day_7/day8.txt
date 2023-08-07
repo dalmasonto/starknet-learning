@@ -1,0 +1,17 @@
+*Attempt level 1 questions*
+
+- Create a generic function called "swap" that takes two arguments of any data type and swaps their values. Demonstrate its usage with integers and strings.
+
+- Design a trait called "Printable" that defines a method "print" to be implemented by any struct. Implement the "Printable" trait for the "Contact" struct from the previous question and print the contact's details using the "print" method.
+
+*Attempt level2 questions*
+
+- You are developing a basic mathematical library in Cairo. Create a generic function called "average" that calculates the average of an array of numbers. Use the "average" function to find the average of  numbers.
+
+- Implement a trait called "Sortable" that defines a method "sort" for sorting an array of elements. Implement "Sortable" for the "Book" struct from the previous question and demonstrate sorting an array of books based on their titles.
+
+*Attempt level 3 questions*
+
+- As part of an inventory management system, design a generic struct called "Inventory" that can hold an array of items of any data type. Implement methods "addItem" and "removeItem" to add and remove items from the inventory. Demonstrate the usage of the "Inventory" struct with different types of items.
+
+- Create a trait called "Combinable" that defines a method "combine" to merge two objects of the same type. Implement "Combinable" for the "WeatherData" struct from the previous questions, allowing you to combine weather data from two different sources (e.g., two weather stations).

@@ -1,0 +1,21 @@
+ Starknet  Contracts
+
+- Introduction into Smart Contracts
+- A simple Contract
+
+*level 1 questions*
+
+- Assuming you have scarb installed, Create a new file, SimpleStorage.cairo and paste this code into it
+
+#[starknet::interface] trait ISimpleStorage<TContractState> { fn set(ref self: TContractState, x: u128); fn get(self: @TContractState) -> u128; } #[starknet::contract] mod SimpleStorage { #[storage] struct Storage { stored_data: u128 } #[init] fn init() -> Storage { Storage { stored_data: 0, } } #[event] struct NumberSet { value: u128, } #[external] impl SimpleStorage of super::ISimpleStorage<ContractState> { fn set(ref self: ContractState, x: u128) { self.stored_data.write(x); NumberSet { value: x, }.emit(); } fn get(self: @ContractState) -> u128 { self.stored_data.read() } } }
+
+- Deploy and try interacting with the contract
+
+Attempt level 2 questions
+- Write a simple Starknet contract that stores an unsigned 32-bit integer called counter. Include functions to increment and get the value of the counter. Deploy the contract and interact with it to increase the counter by 5 and then retrieve the updated value.
+
+- Create a Starknet contract that allows users to register their names. Implement a function registerName that takes a string parameter and stores the name of the caller in the contract's storage. Ensure that the name can be retrieved using a function getName. Deploy the contract and register your name as "John Smith."
+
+*Attempt level 3 questions*
+- Write a Starknet contract to create a simple voting system. Implement functions for creating new proposals and casting votes. Ensure that each address can vote only once on each proposal. Deploy the contract and test it by creating a proposal and casting votes.
+- Develop a basic token contract on StarkNet, where users can transfer tokens between accounts. Implement functions for token transfers, and make sure that the contract accurately updates the balances of sender and receiver. Deploy the token contract and perform a token transfer between two accounts.

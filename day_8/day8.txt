@@ -1,0 +1,22 @@
+*Day 8 tasks*
+*Writing tests in Cairo*
+- how to write tests
+- testing organization
+
+
+*Attempt level 1 questions*
+- Write a test function to verify the correctness of the "swap" function from a previous question. Test it with integers and strings, ensuring that the values are correctly swapped.
+
+- Develop a test case to check the implementation of the "Printable" trait for the "Contact" struct. Ensure that the "print" method outputs the correct contact details.
+
+*Attempt level 2 questions*
+
+- Create a test suite for the "average" function, testing its accuracy for arrays of integers and floating-point numbers with various sizes. Ensure that the calculated averages match the expected values.
+
+- Write a set of test cases to validate the implementation of the "Sortable" trait for the "Book" struct. Ensure that sorting the array of books based on titles produces the correct order.
+
+*Attempt level 3 questions*
+
+- Implement comprehensive test cases for the "Inventory" struct and its methods ("addItem" and "removeItem"). Test it with various data types and scenarios, including adding and removing items, checking for correct inventory size, and handling edge cases.
+
+- Design an extensive test suite to verify the correctness of the "Combinable" trait implementation for the "WeatherData" struct. Test the "combine" method with various weather data objects and ensure that the merging process is accurate
