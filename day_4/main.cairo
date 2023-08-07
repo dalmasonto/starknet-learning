@@ -89,6 +89,4 @@ fn main() {
             num1.print();
         }
     };
-
-
 }
